@@ -1,0 +1,37 @@
+{
+    "person": {
+       "name": "Abhishek",
+       "occupation": "programmer",
+       "age": 23,
+       "gpaInString": "9.5",
+       "mentors": [
+          {
+             "name": "Rajat",
+             "role": "full time"
+          },
+          {
+             "name": "Vatsalya",
+             "role": "intern"
+          }
+       ],
+       "movies": [
+          "3 idiots",
+          "DDLJ"
+       ],
+       "fruits": [
+          "apple",
+          "bananna"
+       ],
+       "id": "Abhishek",
+       "descripton": "My name is Abhishek Garg. I  am from fro DTU\n",
+       "desc": null,
+       "age_in_dec": 23,
+       "base": {
+          "val": 12
+       },
+       "foo": {
+          "val": 12,
+          "val2": 15
+       }
+    }
+ }

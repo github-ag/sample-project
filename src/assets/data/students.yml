@@ -1,0 +1,7 @@
+---
+- name: Abhishek
+  rollNo: 14
+  marks: 100
+- name: Aditya
+  rollNo: 18
+  marks: 95

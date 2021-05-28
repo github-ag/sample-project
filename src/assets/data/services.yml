@@ -1,0 +1,21 @@
+---
+- service: device-manager
+  gitRepository:
+    url: github.com/device-manager
+    useDefault: true
+  profiles:
+  - name: dev
+  - name: release
+  branches:
+  - name: dev
+  - name: release
+- service: rule-manager
+  gitRepository:
+    url: github.com/rule-manager
+    useDefault: true
+  profiles:
+  - name: dev
+  - name: release
+  branches:
+  - name: dev
+  - name: release

@@ -1,0 +1,25 @@
+person:
+  name: "Abhishek"
+  occupation: "programmer"
+  age: 23
+  gpaInString: !!str 9.5
+  mentors:
+    - name: "Rajat"
+      role: "full time"
+    - {name: "Vatsalya", role: "intern"}
+
+  movies: ["3 idiots","DDLJ"]
+  fruits: 
+    - apple
+    - bananna
+  id: "abhi"
+  descripton: >
+   My name is Abhishek Garg.
+   I  am from fro DTU
+  desc: !
+    This text also
+       stores the indenation and other formatting
+  age_in_dec: !!float 23
+  
+    
+  
