@@ -1,12 +1,14 @@
 <h2 mat-dialog-title>{{mservice.service}}</h2>
 
-
 <mat-dialog-content class="mat-typography">
+    <!-- Getting the input -->
   <div>
-      <app-branch-profile-input></app-branch-profile-input>
+      <app-branch-profile-input [mservice]="mservice" (branch_profile_sent)="sendToContentDisplay($event)"></app-branch-profile-input>
   </div>
+  <!-- Showing the contents accordingly -->
   <app-content-display></app-content-display>
 </mat-dialog-content>
+
 <mat-dialog-actions align="end">
   <button mat-button mat-dialog-close>Cancel</button>
   <button mat-button [mat-dialog-close]="false" cdkFocusInitial>Install</button>
