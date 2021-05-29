@@ -1,0 +1,17 @@
+.service-button{
+    color: black;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    background-color: white;
+    border-color: #a7bbc7;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.to-right{
+    float:right;
+}
+.branch-profile{
+    color: #687980;
+    font-size: 13px;
+}

@@ -7,18 +7,24 @@ import { HttpClientModule } from '@angular/common/http';
 import { DisplayYAMLDataComponent } from './display-yamldata/display-yamldata.component';
 import { DisplayServicesComponent } from './display-services/display-services.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDialogModule} from '@angular/material/dialog';
+import { WorkspaceDialogueComponent } from './workspace-dialogue/workspace-dialogue.component';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
     AppComponent,
     DisplayYAMLDataComponent,
-    DisplayServicesComponent
+    DisplayServicesComponent,
+    WorkspaceDialogueComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatDialogModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
