@@ -33,7 +33,7 @@ export class DisplayServicesComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this._yamlDataService.getServices()
+    this._yamlDataService.getServicesList()
         .subscribe(data => {
           this.services = this._yamlDataService.yamlToJson(data);
         });

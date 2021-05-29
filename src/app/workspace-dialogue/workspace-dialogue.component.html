@@ -6,7 +6,7 @@
       <app-branch-profile-input [mservice]="mservice" (branch_profile_sent)="sendToContentDisplay($event)"></app-branch-profile-input>
   </div>
   <!-- Showing the contents accordingly -->
-  <app-content-display></app-content-display>
+  <app-content-display [displayData]="displayData"></app-content-display>
 </mat-dialog-content>
 
 <mat-dialog-actions align="end">

@@ -1,5 +1,5 @@
 ---
-- service: device-manager
+- service: device_manager
   gitRepository:
     url: github.com/device-manager
     useDefault: true
@@ -9,7 +9,7 @@
   branches:
   - name: dev
   - name: release
-- service: rule-manager
+- service: rule_manager
   gitRepository:
     url: github.com/rule-manager
     useDefault: true

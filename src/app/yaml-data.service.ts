@@ -17,15 +17,24 @@ export class YamlDataService {
   //private _url_json_file = "/assets/data/jsonFile.json";
   //private _url_students_json = "/assets/data/students.json";
 
-  private _url_getService = "/assets/data/services.yml";
+  private _url_getServicesList = "/assets/data/services.yml";
+  private _url_getService = "/assets/data/";
   constructor(private http: HttpClient) { 
     //this.yamlToJson();
   }
 
   //////////// Getting Services Functions ////////////
-  getServices(){
-    return this.http.get(this._url_getService, {responseType: 'text'});
+  getServicesList(){
+    return this.http.get(this._url_getServicesList, {responseType: 'text'});
   }
+  getService(service:any, branch:any, profile:any){
+    let modified_url = this._url_getService.concat(branch.toString()," branch/",service,"_",profile.toString(),".yml");
+    //console.log("modified url is");
+    console.log(modified_url);
+    return this.http.get(modified_url,{responseType: 'text'});
+  }
+
+  
 
   yamlToJson(temp: string){
     return yaml.parse(temp);
