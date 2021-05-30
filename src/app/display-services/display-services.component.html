@@ -1,10 +1,10 @@
 <div class="container" *ngFor="let s of services">
-    <button class="btn service-button" (click)="openWorkspace(s)">
+    <button class="btn service-button service-text" (click)="openWorkspace(s)">
         {{s.service}}
         <span class="to-right">
-            <span class="branch-profile">BRANCH</span>  
+            <span class="branch-profile-text">BRANCH</span>  
             {{s.branches.length}} &nbsp; &nbsp; 
-            <span class="branch-profile">PROFILES</span> 
+            <span class="branch-profile-text">PROFILES</span> 
              {{s.profiles.length}}
         </span>
     </button>
